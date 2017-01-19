@@ -1,0 +1,8 @@
+<div class="container">
+  <h3>Users</h3>
+  <ul>
+    <li *ngFor="let user of _userService.users">
+      <span>{{user.name}} - this user was created on {{ user.created_at | date:'short' }}</span>
+    </li>
+  </ul>
+</div>
